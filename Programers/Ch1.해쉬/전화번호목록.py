@@ -14,15 +14,17 @@ def solution(phone_book):
     # i = 비교대상 j 를 전체대상이라고 했을때
     for i in phone_book:
         
-        for j in arr.values():
-            if i != j and len(str(j)) > len(str(i)):
+        for j in arr.keys():
+            
+            if  len(str(j)) > len(str(i)):
                 if j[:len(str(i))] == i:
                     
                     answer = False
-            del arr[j]
+            
             if not answer :
                 break
-            
+        arr.pop(j)
+             
         if not answer:
             break
                 
@@ -32,5 +34,4 @@ def solution(phone_book):
 
 
 
-print(solution(["12","123","1235","567","88"]))
 
