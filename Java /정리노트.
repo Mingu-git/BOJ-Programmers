@@ -1,0 +1,11 @@
+용어,단축키 정리 :
+들여쓰기 =  ident
+pvsm = 기본 , main = vscode
+sout = 출력
+
+
+1  : 변수선언시 -> 메모리 할당  따라서 변수 변환시 메모리 유실 생각
+
+2 : final -> a.한번만 할당가능 b.할당된 값 변경 불가능 final int a = 1
+
+3 : method내의 지역변수 -> 그 안에서 재선언 불가능, class 에 있는 instance 변수  -> 접근,수정 가능
