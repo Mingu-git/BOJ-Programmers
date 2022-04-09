@@ -1,4 +1,6 @@
 {
     "python.pythonPath": "/usr/bin/python",
+    "python.autoComplete.addBrackets": true,
+    "python.analysis.completeFunctionParens": true
     
 }
