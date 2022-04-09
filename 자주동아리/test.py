@@ -1,14 +1,19 @@
+import sys
+input = sys.stdin.readline
 
 
-arr  = [2,2,2]
+class Node:
+    def __init__(self,data):
+        self.left = -1
+        self.right =  -1
+        self.data = data
+        
+tree = {}
+ans = 0
 
-print(arr)
+N  = int(input().rstrip())
+arr = list(map(int,input().rstrip().split()))
+k  = int(input().rstrip())
 
-arr = list(set(arr))
-list(arr)
 
-print(arr)
-
-ans = [ 0 for _ in range(7)]
-
-print(ans)
+        
