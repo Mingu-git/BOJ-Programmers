@@ -11,9 +11,9 @@ class Node:
 tree = {}
 ans = 0
 
-N  = int(input().rstrip())
-arr = list(map(int,input().rstrip().split()))
-k  = int(input().rstrip())
+phone = ["119", "97674223", "1195524421","117"]
+
+print(phone[1:])
 
 
         
