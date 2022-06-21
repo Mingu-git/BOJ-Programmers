@@ -24,7 +24,8 @@ def solution(phone_book):
     # 따라서 다돌려본다는건 꽤 좋은 방법이 아님
     # 숫자를 다루거나 비교할때는  정렬 = 비교이 효율적으로 될수도있음.
     # 딕셔너리의 정렬은 ?
-    """풀이 1
+    """풀이 1 :for 문 2개  + pop + slice 
+    
     for i in phone_book:        
         for j in arr.keys():
             # 일단 다 돌려본다는게 
@@ -38,22 +39,32 @@ def solution(phone_book):
         if not answer:
             break
     """
+    """
+    #풀이2: for 문 2개 +  in 2개
     
-    """풀이2
     # 문제는  선형탐색 ( 2중 반복문으로는 접근할수있지만)
     # 해쉬 값으로는 생각보다 접근하기가 어려웠다.
     for i in arr:
         temp = ""
         for j in i:
             temp += j
+            print(i,j,temp)
             if temp in arr and temp != i: # dict in = O(1)
                 answer = False
-"""
+    """
+    
+
+# 정렬시 그전의 숫자에서 같지 않았던것은 그이후에 접두사가 같을 수없다.
+# 그림으로 한번그려서 이해해 보자.
+# 또한 길이가 다를경우 더긴길이의 부분은 자동으로 삭제된다.
+
+"""풀이3 for 문 1개 + in 
+
+
     phone_book  = sorted(phone_book)
     for p1 , p2 in zip(phone_book,phone_book[1:]):
         print(p1,p2)
-    
-    
+"""
     return answer
 
 
