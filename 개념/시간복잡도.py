@@ -1,9 +1,5 @@
 """
 시간복잡도 :
-
-
-
-
 """
 
 1. 누적합
@@ -22,3 +18,12 @@ But 누적합을 이용하여 구간합을 구해보자.
 누적합 연산 = a[]의 i ~ j구간의 합은 S_j - S_i이다. 이런방식.
 
 
+2. deque vs list
+
+deque : push,pop(0) -> O(1) / arr[i] -> O(N)
+
+list : push,pop(0),insert(0,123),delete(i) -> O(N) / arr[i],pop(),append() -> O(1) / sort  -> O(Nlog(N))
+
+3. dict
+index , d[k] = v ,pop ,popitem() ,keys() -> O(1)
+for k in d -> O(N)
