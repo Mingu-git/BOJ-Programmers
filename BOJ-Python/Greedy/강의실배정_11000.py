@@ -17,11 +17,11 @@ arr = [list(map(int,input().rstrip().split())) for _ in range(N)]
 # 가장 작은 시간을 효율적으로 도출해낸다 -> heapq의 주된 목적성을 가짐  : 이논리로 사용을 이끌어내야함.
 
 ans = []
-arr.sort(key = lambda x : x[1])
+# arr.sort(key = lambda x : x[1]) 잘못된생각
 heapq.heappush(ans,arr[0][1])
 
 for i in range(1,len(arr)):
-    
+    # heapq를 쓰는 이유는 최소값을 구하는 가장 빠르기 때문
     if ans[0] <= arr[i][0]:
         heapq.heappop(ans)
         heapq.heappush(ans,arr[i][1])
