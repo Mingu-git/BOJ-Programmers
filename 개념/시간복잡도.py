@@ -25,5 +25,22 @@ deque : push,pop(0) -> O(1) / arr[i] -> O(N)
 list : push,pop(0),insert(0,123),delete(i) -> O(N) / arr[i],pop(),append() -> O(1) / sort  -> O(Nlog(N))
 
 3. dict
+
+검색, 삽입,삭제 -> O(1)
+
 index , d[k] = v ,pop ,popitem() ,keys() -> O(1)
 for k in d -> O(N)
+
++@ dict 구성
+
+1. 기본적 선언
+
+2. zip 활용
+
+number = ['one','two'] , num = [1,2]
+
+dict__ = dict(zip(number, num))
+new_dict = {word : number for word , number in dict__.items() if numer > 1}  //for 문이용
+
+
+from collections import defaultdict  # 이것도 알아보자 .

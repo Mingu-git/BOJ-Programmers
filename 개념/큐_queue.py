@@ -12,7 +12,6 @@
 """
 
 
-
 1. "우선순위 큐" (priority queue) : FIFO 구조, 삽입 상관 x But 제거시 사장 작은값을 먼저 제거.
 "우선순위큐 : Thread-Safe / heapq  : Thread-Non-Safe -> 더빠름 안전한것을 확인하는것은 더 오래걸림." -> 10~30배
 
@@ -43,6 +42,7 @@ arr.get()[1] ->유경이 먼저 출력
 이때 삽입 => arr.insert(0,3) => 앞쪽에 삽입가능 뒤쪽은 arr.push()이용
 -> 성능적으로 매우 안좋음 -> pop,insert -> O(N)
 -> 주로 무작위 접근(random access)에 특화
+-> 제거 or join하는 인덱스위치가 맨끝이 아닐경우에 특화.
 
 2.2 "deque 이용"  : double ended queue 데이터를 양방향에서 추가 + 제거 가능
 
@@ -53,3 +53,5 @@ arr = deque([1,2,3])
 
 
 +@ arr.rotate(1 or -1 ) = 1 2 3 4 -> 4 1 2 3  // 4 1 2 3 -> 1 2 3 4
+
+

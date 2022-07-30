@@ -1,8 +1,5 @@
 #-*- coding:utf-8 -*-
 
-import sys
-input = sys.stdin.readline
-
 
 """
 목표 : 최대한 많은 박스들을 배송
@@ -34,6 +31,9 @@ input = sys.stdin.readline
           60
 
 """
+import sys
+input = sys.stdin.readline
+
 
 N , C = list(map(int , input().rstrip().split()))
 M = int(input())
@@ -45,11 +45,7 @@ arr = [ C for _ in range(M+2)] # 1-5 까지 남은 양
 ans = 0
 
 
-
-for st,end,cnt in dilivery:
-    
-    
-    
+for st,end,cnt in dilivery:    
     temp = arr[st:end]
     #print(temp,cnt)
     if min(temp) >= cnt:
@@ -60,8 +56,5 @@ for st,end,cnt in dilivery:
         for k in range(st,end):
             arr[k] -= min(temp)
         ans += min(temp)
-
-
-    
-
+        
 print(ans)
