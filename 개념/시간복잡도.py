@@ -43,4 +43,30 @@ dict__ = dict(zip(number, num))
 new_dict = {word : number for word , number in dict__.items() if numer > 1}  //for 문이용
 
 
+4. reverse() ,rotate()
+
+뒤지겁나 한칸씩 밀때는 다음과 같은것을 사용해보자
+이때 reverse 매우 시간복잡도 크니 주의
+
+이때 2번 뒤집을시 = 기본상태와 똑같기때문에
+이런 기믹을 잘이해해보자.
+
+5. in 연산을 할때에는 set으로 바꿔서 연산하기
+
+for i in arr:
+    print("!@#")
+
+대신
+
+for i in set(arr):
+    print("!@#")
+    
++@ 어떤 값이 있는 지찾을때는
+
+setdefault("!@#" , "민욱")  //"!@#"이 있을 경우는 그 key값을 아닐 경우는 내이름을 반환!
+
+시간복잡도 효율 상승
+
+
+
 from collections import defaultdict  # 이것도 알아보자 .

@@ -36,7 +36,7 @@ for i in range(len(arr)):
             if arr[i-1] =='(':
                 ans += temp
             temp_X.pop()
-            temp /= 2
+            temp //= 2
             
         else:
             ispaired = False
@@ -46,7 +46,7 @@ for i in range(len(arr)):
             if arr[i-1] =='[':
                 ans += temp
             temp_Y.pop()
-            temp /= 3
+            temp //= 3
         else:
             ispaired = False
             break
