@@ -14,53 +14,51 @@
 
 2가지일꺼같아
 
+이문제의 포인트 : 
+
 
 """
 
 import sys
 input =sys.stdin.readline
 
-
-N = int(input().rstrip())
+N = int(input())
 ans = []
 
 for _ in range(N):
     
-    word = list(str(input().rstrip()))
-    flag = 1
+    word = str(input().rstrip())
+    word_temp = list(word)
     
     if word == word[::-1]:
         ans.append(0)
     else:
         
-        start = word
-        end = word
+        st_word = list(word_temp)
+        end_word =list( word_temp)
+        L = len(word_temp) // 2
         
-        leng = int(len(word) // 2)
+        #print(st_word ,end_word)
         
-        
-        for i in range(leng):
-            
-            
-            if word[i] != word[-(i+1)]:
+        for i in range(L):
+            #print(word_temp[i] , word_temp[-(i+1)])
+            if word_temp[i] != word_temp[-(i+1)]:
                 
-                start.pop(i)
-                end.pop(-(i+1))
-
-                if start == start[::-1]:
+                st_word.pop(i)
+                end_word.pop(-(i+1))
+                #print(i,st_word,end_word)
+                if st_word == st_word[::-1]:
                     ans.append(1)
-                    flag = 0
                     break
-                
-                if end == end[::-1] and flag:
+                elif end_word == end_word[::-1]:
                     ans.append(1)
-                    flag = 0
                     break
-                
-                if  flag:
+                else:
                     ans.append(2)
                     break
-
-print(ans)
-
-
+                    
+                    
+for i in ans:
+    print(i)
+    
+    

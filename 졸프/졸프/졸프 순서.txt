@@ -1,0 +1,19 @@
+Advertising Recommendation MiddleWare
+
+1. Quick Review
+2. changed Schedule
+
+3. FaceRecogniton Part
+3.1. Using OpenCV(FaceNet)
+3.2. Using VGG(Resnet)
+3.3. Result
+3.4 Code
+
+4. Age Prediction Model
+4.1. CNN Model overview(summary)
+4.2. Model Result
+4.3. Code 
+
+5. Todo.
+5.1 Design Middleware 구상도
+5.2 공부해본 내용들(kafka 사용해서 어떤식으로 구성할지)

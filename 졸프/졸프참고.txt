@@ -1,0 +1,14 @@
+https://ksr930.tistory.com/160?category=968896
+
+https://baek.dev/post/20/
+(얘 읽는거 추천)
+
+카프카 구조 및 작동원리
+
+https://velog.io/@litien/2019-08-22-2108-%EC%9E%91%EC%84%B1%EB%90%A8-jyjzmoph0g
+Java 카프카 구현 코드 예시
+
+https://victorydntmd.tistory.com/344
+기본 카프카 용어 정리
+
+https://youtu.be/rBVCvv9skT4

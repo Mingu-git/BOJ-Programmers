@@ -8,12 +8,16 @@
 2.arr = list(map(int,input().rstrip().split())) vs arr = (map(int,input().rstrip().split())) //vs코드상 결과 same 가끔
 boj컴파일시 type error발생 list 붙여주자
 
-3.f = sorted(e, key = lambda x : (x[0], -x[1])) 정렬시 1. 첫번째원소 오름차순 2. 두번째 원소 내림차순 정렬
+3.f = sorted(arr, key = lambda x : (x[0], -x[1])) 정렬시 1. 첫번째원소 오름차순 2. 두번째 원소 내림차순 정렬
+
+
+arr.sort(key = lambda x : ( x[0] , -x[1])
 
 """
 팁모음
 
 """
+
 
 1.상태변이 변수를 통한 if 문 제어시
 
